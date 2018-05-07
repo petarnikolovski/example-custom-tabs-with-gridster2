@@ -6,10 +6,12 @@ import { MatTabsModule, MatIconModule } from '@angular/material';
 import { GridsterModule } from 'angular-gridster2';
 
 import { AppComponent } from './app.component';
+import { GridComponent } from './grid/grid.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    GridComponent
   ],
   imports: [
     BrowserModule,

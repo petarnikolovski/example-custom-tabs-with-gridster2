@@ -1,0 +1,13 @@
+gridster {
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  background-color: gray;
+}
+
+:host {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
