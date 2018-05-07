@@ -7,11 +7,15 @@ import { GridsterModule } from 'angular-gridster2';
 
 import { AppComponent } from './app.component';
 import { GridComponent } from './grid/grid.component';
+import { TabsComponent } from './tabs/tabs.component';
+import { TabComponent } from './tab/tab.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    GridComponent
+    GridComponent,
+    TabsComponent,
+    TabComponent
   ],
   imports: [
     BrowserModule,

@@ -1,1 +1,8 @@
-<app-grid></app-grid>
+<tabs (selectedTabChange)="onChange($event, cats, bananas)">
+  <tab tabTitle="Cats">
+    <app-grid #cats></app-grid>
+  </tab>
+  <tab tabTitle="Bananas">
+    <app-grid #bananas></app-grid>
+  </tab>
+</tabs>

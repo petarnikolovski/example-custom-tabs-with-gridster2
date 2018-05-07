@@ -1,0 +1,8 @@
+<ul class="tabrow">
+  <li *ngFor="let tab of tabs"
+      [ngClass]="tab.active ? 'selected' : 'mask'"
+      (click)="selectTab(tab)">
+    {{tab.tabTitle}}
+  </li>
+</ul>
+<ng-content></ng-content>

@@ -1,0 +1,53 @@
+/* * {
+  margin: 0;
+  padding: 0;
+} */
+
+.tabrow {
+  list-style: none;
+  margin: 0;
+  margin-bottom: 1.5vh;
+  padding: 0;
+  line-height: 4vh;
+  position: relative;
+}
+
+li {
+  cursor: pointer;
+}
+
+li.mask:after {
+  content: "";
+  position: absolute;
+  height: 20%;
+  bottom: -3px;
+  left: -3px;
+  right: -3px;
+  width: 100%;
+  z-index: 0;
+  border-left: 3px solid white;
+  border-right: 3px solid white;
+}
+
+.tabrow:after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  border-bottom: 3px solid black;
+  z-index: 1;
+}
+
+.tabrow:before {
+  z-index: 1;
+}
+
+.tabrow li {
+  margin: 0 1vh;
+  padding: 0 2vh;
+  border: 3px solid gray;
+  display: inline-block;
+  position: relative;
+  z-index: 0;
+}
